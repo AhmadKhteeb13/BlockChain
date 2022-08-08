@@ -1,0 +1,40 @@
+first of all you shoud have :
+ganache
+geth
+node js
+python
+and also don't forget intall web3 js.
+
+
+secound:
+open ganach and click Quick start Now you have 10 fake accounts each with 100 eth.
+Now in the top right, click on gear and click add project and Go to project path and
+ select truffle and then click save and restart .
+
+Third:
+1) go to vs code and open project.
+2) open new termenal and write this:
+truffle migrate --complie-all --reset --network development
+note:
+(this command to migrate all contract and Now you should notice that a small part of
+ the first account in the ganach has been deducted This is the contract fee, and the
+ more complex the contract, the higher the discounted amount)
+3) now write this in termenal:
+npm start
+note:
+(this command to start server and open the website )
+4) I have a few fake accounts that you can change later. This is so you can access
+ the site:
+    Ahmad    ,  1234567890
+    Mohammad ,  1234567891
+    mohanad  ,  1234567892
+    same     ,  1234567893
+    msoad    ,  1234567894
+    hussen   ,  1234567895
+    osama    ,  1234567896
+    amgd     ,  1234567897
+    ayman    ,  1234567898
+    rame     ,  1234567899
+chose one and log in.
+5) Now you can do whatever you want.
+6) Thank you>...

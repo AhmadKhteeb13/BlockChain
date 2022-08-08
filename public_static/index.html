@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignIn</title>
+  <link href="stylesheets/app.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onload="startpoint()">
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="" class="sign-in-form">
+          <h2 class="title">Sign In</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="Name" placeholder="Your Name" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="Password" type="password" placeholder="Password" />
+          </div>
+          <a class="btn solid" onclick="login();">Login</a>
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h2 class="title2">BlookChain..</h2>
+          <h2 class="contenty">Cryptocurrencies ... Smart Contracts ... Financial Services ... Supply Chain ... And
+            more!</h2>
+        </div>
+        <img src="./stylesheets/log.svg" class="image" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./javascript/accounts.js"></script>
+  <script src="./javascript/ForUi.js"></script>
+  <script src="./javascript/maneger.js"></script>
+  <script>
+
+    window.mngr = new manger();
+    function startpoint() {
+      window.mngr.startpoint();
+    }
+    function login() {
+      window.mngr.login($("#Name").val(), $("#Password").val());
+    }
+  </script>
+</body>
+
+</html>

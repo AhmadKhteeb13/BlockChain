@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain</title>
+    <link rel="stylesheet" href="./css/stylepop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="CSS/mainStyle.css">
+
+</head>
+
+<body onload="startpoint()">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <!-- take width: 1170px -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MST_navbar"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">supply<span>Chain</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="MST_navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./home.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="./sendcoineCus.html">Customer</a></li>
+                    <!-- <li><a href="./sendcoine.html">Supplier</a></li>
+                    <li><a href="Carrier.html">Carrier</a></li> -->
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start section login with supplier -->
+    <section class="loginSupplier text-center">
+        <div class="fields">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <h3 id="selecttag" class="specail_h3">Select Customer Account</h3>
+                            <select id="options" class="form-control input-lg" value="custaccount"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <h3 id="selecttag2" class="specail_h3">Select Supplyer Account</h3>
+                            <select id="options1" class="form-control input-lg"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 special">
+                        <div class="form-group">
+                            <input id="money" type="number" placeholder="Amount of money to be transferred"
+                                class="input-lg form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <button class="btn btn-block btn-main-color input-lg " onclick="creatdeal();">Save
+                                Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./javascript/accounts.js"></script>
+    <script src="./javascript/maneger.js"></script>
+    <script>
+        var mngr = new manger();
+        function startpoint() {
+            mngr.startpoint();
+        }
+        function creatdeal()
+        {
+            mngr.dealdatapart1($("#options").val(),$("#options1").val(), $("#money").val());
+        }
+    </script>
+</body>
+
+</html>

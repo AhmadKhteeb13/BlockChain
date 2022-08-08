@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain</title>
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="CSS/mainStyle.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+        <div class="container"> <!-- take width: 1170px -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MST_navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">supply<span>Chain</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="MST_navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./home.html">Home<span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="./sendcoineCus.html">Customer</a></li> -->
+                    <li><a href="./sendcoine.html">Supplier</a></li>
+                    <li class="active"><a href="Carrier.html">Carrier</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    <!-- End Navbar -->
+    <!-- Start section login with supplier -->
+    <section class="loginSupplier text-center">
+        <div class="fields">
+            <div class="container">
+                <h2>Carrier information data</h2>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <h3 id="selecttag" class="specail_h3">Select Carrier Account</h3>
+                            <!-- <select id="options" ></select> -->
+                            <select id="options" class="form-control input-lg"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="" role="form">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input id="CarrierName" type="text" placeholder="Supplier Name" class="input-lg form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 special">
+                            <div class="form-group">
+                                <input id="Cost" type="number" placeholder="Shipping cost per kilo" class="input-lg form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-block btn-main-color input-lg" style="outline: none;" onclick="supplierdata();">Save Data</button>
+                    </div>
+                </div>
+                    
+
+
+            </div>
+
+     
+     
+            </div>
+        </div>
+    </section>
+    
+    <!-- End section login with supplier -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./javascript/accounts.js"></script>
+    <script src="./javascript/maneger.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+  <script>
+    var mngr = new manger();
+    function supplierdata()
+    {
+        mngr.Carrierdata($("#CarrierName").val() , $("#Cost").val() );
+    }
+  </script>
+</body>
+</html>

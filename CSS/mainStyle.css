@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* padding-top: 100px; */
+    /* height: 2000px; */
+    padding-top: 70px;
+}
+/* .navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+} */
+.navbar {
+    min-height: 70px;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background: linear-gradient(45deg,#f046ff,#9b00e8);
+    border-radius: 10px;
+    border: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #dcdcdc;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+.navbar-brand {
+    font-size: 30px;
+    line-height: 40px;
+}
+.navbar-brand span{
+    color: #f046ff;
+}
+.navbar-toggle {
+    margin-top: 17px;
+}
+.carousel-inner>.item>a>img, 
+.carousel-inner>.item>img {
+    width: 100%;
+    height: 100vh
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    background: #f046ff;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.loginCustomer{
+    background: url('../assets/pexels-rostislav-uzunov-5011647.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    min-height: 100vh;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+}
+/* .loginCustomer h1 ~ .lead::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ff8b38;
+    border-radius: 10px;
+} */
+.loginCustomer .fields{
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+    /* vh: view port hight */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.loginCustomer .fields h2{
+    margin-bottom: 50px;
+    color: #f046ff;
+    text-transform: uppercase;
+}
+.loginCustomer .fields h3{
+    color: #f046ff;
+}
+.loginCustomer .fields select{
+    border-radius: 25px;
+    color: #000;
+
+
+}
+.loginCustomer .fields .specail_h3{
+    text-align: left;
+}
+/* .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+} */
+.btn-main-color{
+    color: #fff;
+    /* background-color: #ff8b38; */
+    background: linear-gradient(45deg,#f046ff,#9b00e8);
+    border-radius: 25px;
+    border: none;
+    font-size: 21px;
+    /* outline: none; */
+
+    /* border-color: #ed7017; */
+}
+.loginCustomer p{
+    margin-bottom: 50px;
+    color: #f046ff;
+    /* font-weight: 900; */
+}
+.loginCustomer input[type="text"],
+.loginCustomer input[type="number"]{
+    /* Start dark mode */
+    /* background: rgba(82, 78, 78, 0.7);
+    color: #FFF; */
+    border-radius: 25px;
+    /* End dark mode */
+
+    /* Start white mode */
+    
+    color: #000;
+   
+    /* End white mode */
+
+   
+    border: none;
+}
+
+/* Start section loginSuuplier */
+.loginSupplier{
+    background: url('../assets/pexels-rostislav-uzunov-5011647.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    min-height: 100vh;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+}
+.loginSupplier .fields{
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+    /* vh: view port hight */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.loginSupplier .fields h2{
+    margin-bottom: 50px;
+    color: #f046ff;
+    text-transform: uppercase;
+}
+.loginSupplier .fields select{
+    border-radius: 25px;
+    color: #000;
+}
+.loginSupplier .fields .specail_h3{
+    text-align: left;
+    color: #f046ff;
+
+}
+.loginSupplier .fields .special{
+    padding-top: 56px;
+}
+.loginSupplier input[type="text"],
+.loginSupplier input[type="number"],
+.loginSupplier textarea{
+    /* Start dark mode */
+    /* background: rgba(82, 78, 78, 0.7);
+    
+
+    color: #FFF; */
+    border-radius: 25px;
+    /* background: #222; */
+    /* End dark mode */
+
+    /* Start white mode */
+    
+    color: #000;
+   
+    /* End white mode */
+
+   
+    border: none;
+}
+.loginSupplier textarea{
+    border-radius: 25px;
+    /* color: #000; */
+    height: 229px;
+}
+.loginSupplier p{
+    margin-bottom: 50px;
+    color: #f046ff;
+    /* font-weight: 900; */
+}
+
+/* End section loginSuuplier */
+
+
+
+/* Start section carrier */
+.logincarrier{
+    background: url('../assets/pexels-rostislav-uzunov-5011647.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    min-height: 100vh;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+}
+.logincarrier .fields{
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+    /* vh: view port hight */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.logincarrier .fields select{
+    border-radius: 25px;
+    color: #000;
+}
+.logincarrier .fields .specail_h3{
+    text-align: left;
+    color: #f046ff;
+
+}
+/* .logincarrier .fields .special{
+    padding-top: 56px;
+} */
+.logincarrier input[type="text"],
+.logincarrier input[type="number"]{
+    /* Start dark mode */
+    /* background: rgba(82, 78, 78, 0.7);
+    
+
+    color: #FFF; */
+    border-radius: 25px;
+    /* background: #222; */
+    /* End dark mode */
+
+    /* Start white mode */
+    
+    color: #000;
+   
+    /* End white mode */
+
+   
+    border: none;
+}
+.logincarrier p{
+    margin-bottom: 50px;
+    color: #f046ff;
+    /* font-weight: 900; */
+}
+.logincarrier .fields h2{
+    margin-bottom: 50px;
+    color: #f046ff;
+    text-transform: uppercase;
+}
+.logincarrier .fields p,
+.logincarrier .fields h3{
+    text-transform: capitalize;
+}
+.logincarrier .fields h3{
+   text-align: left;
+}
+/* End section carrier */
+

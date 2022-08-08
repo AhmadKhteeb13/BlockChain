@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./javascript/require.js"></script>
+  <title>SignIn</title>
+  <link href="stylesheets/app.css" rel="stylesheet">
+  <link type="text/css" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="" class="sign-in-form">
+          <h2 class="title">Sign In</h2>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="options" type="any thing" placeholder="Password" />
+          </div>
+          <input type="button" value="click" id="btnclick" class="btn solid" onclick="getacounts();" />
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+
+      <div class="panel left-panel">
+        <div class="content">
+          <h2 class="title2">BlookChain..</h2>
+          <h2 class="contenty">Cryptocurrencies ... Smart Contracts ... Financial Services ... Supply Chain ... And more
+            !</h2>
+        </div>
+        <img src="./stylesheets/log.svg" class="image" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./javascript/maneger.js"></script>
+  <script>var mngr = new maneger();
+    function getacounts(){
+        mngr.getacounts();
+    }</script>
+</body>
+
+</html>
